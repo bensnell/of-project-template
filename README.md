@@ -6,14 +6,15 @@ This repository sets forth a template that allows versioning of OpenFrameworks a
 
 ## Quick Setup
 
-Run these commands in the command line. Replace `0.11.2` with your OF version and `vs2017` with your platform (for example, `osx`, `linux`, `vs2017`, etc). 
-
-On Windows, make sure `unzip`, `curl`, `wget`, and `rsync` are installed.
-
-``` bash
-git clone -b version/0.11.2 --recursive https://github.com/local-projects/of-project-template.git
-./of-project-template/OpenFrameworks/scripts/dev/download_libs.sh -p vs2017 -v 0.11.2
+[Create a new repo from this template](https://github.com/bensnell/of-project-template/generate). Then, on the command line:
+```bash
+git clone --recursive <repo>
+./install_addons.sh
+./OpenFrameworks/scripts/dev/download_libs.sh -p <platform> -v <version>
 ```
+where `<repo>` = url of your new repo, `<platform>` = one of {`osx`, `linux`, `vs2017`, etc.}, `<version>` = latest OF version (`0.11.2`).
+_Note: Make sure `unzip`, `curl`, `wget`, and `rsync` are installed._
+
 
 ## Quick Links
 
